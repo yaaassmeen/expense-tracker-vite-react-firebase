@@ -1,0 +1,164 @@
+.expense-tracker {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.expense-tracker h1 {
+  font-size: 40px;
+}
+.expense-tracker button {
+  margin-left: 10px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 200px;
+}
+.profile-photo {
+  width: 200px;
+  border-radius: 50%;
+}
+
+
+.sign-out-button {
+  border: none;
+  margin-top: 50px;
+  width: 150px;
+  background: #000000;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.sign-out-button:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sign-out-button:active {
+  background-color: #eeeeee;
+}
+
+.sign-out-button:focus {
+  outline: none;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25), 0 0 0 3px #c8dafc;
+}
+
+.sign-out-button:disabled {
+  filter: grayscale(100%);
+  background-color: #ebebeb;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+
+ 
+.transactions {
+  margin: 20px auto; 
+  padding-left: 10px;
+  width: 90vw; 
+  max-width: 1000px;
+  height: 400px;
+  overflow: auto;
+
+}
+
+.transactions .container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.transactions h3 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.transactions .responsive-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.transactions .table-header {
+  color: white;
+  background-color: #111;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.transactions .table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.transactions .col {
+  padding: 15px;
+  text-align: center;
+}
+
+.transactions .col-1 {
+  width: 10%;
+}
+
+.transactions .col-2 {
+  width: 40%;
+}
+
+.transactions .col-3 {
+  width: 25%;
+}
+
+.transactions .col-4 {
+  width: 25%;
+}
+
+@media all and (max-width: 767px) {
+  .transactions .table-header {
+    display: none;
+  }
+
+  .transactions .table-row {
+    display: block;
+    margin-bottom: 20px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .transactions .col {
+    display: block;
+    padding: 10px 0;
+    text-align: left;
+  }
+
+  .transactions .col:before {
+    content: attr(data-label);
+    display: inline-block;
+    width: 50%;
+    font-weight: bold;
+    padding-right: 10px;
+  }
+}
