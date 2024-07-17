@@ -152,7 +152,7 @@ export const ExpenseTracker = () => {
               {transaction.description}
             </td>
             <td className="col col-2" data-label="Amount">
-              ${transaction.transactionAmount}
+              Rs-{transaction.transactionAmount}
             </td>
             <td className="col col-3" data-label="Type">
               <label
