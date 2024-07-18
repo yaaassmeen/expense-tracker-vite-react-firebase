@@ -6,11 +6,10 @@ import { ExpenseTracker } from "./pages/expense-tracker/index";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/expense-tracker-vite-react-firebase">
         <Routes>
-          <Route path="/expense-tracker-vite-react-firebase" exact element={<Auth />} />
+          <Route path="/" exact element={<Auth />} />
           <Route path="/expense-tracker" element={<ExpenseTracker />} />
-          <Route path="*" element={<div>Not Found</div>} /> {/* Fallback route */}
         </Routes>
       </Router>
     </div>
