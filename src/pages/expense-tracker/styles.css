@@ -163,7 +163,7 @@
   width: 25%;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 480px) {
   .transactions .table-header {
     display: none;
   }
