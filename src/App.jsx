@@ -10,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/expense-tracker-vite-react-firebase" exact element={<Auth />} />
           <Route path="/expense-tracker" element={<ExpenseTracker />} />
+          <Route path="*" element={<div>Not Found</div>} /> {/* Fallback route */}
         </Routes>
       </Router>
     </div>
