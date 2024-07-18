@@ -10,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Auth />} />
           <Route path="/expense-tracker" element={<ExpenseTracker />} />
+          <Route path="*" element={<div>Not Found</div>} />
         </Routes>
       </Router>
     </div>
