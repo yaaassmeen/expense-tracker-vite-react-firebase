@@ -70,11 +70,19 @@
 }
 
 @media screen and (max-width: 480px) {
+  .expense-tracker {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .expense-tracker h1 {
     font-size: 28px;
   }
 
   .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10px;
   }
 
@@ -89,6 +97,7 @@
     margin-top: 5px;
   }
 }
+
  
 .transactions {
   margin: 20px auto; 
