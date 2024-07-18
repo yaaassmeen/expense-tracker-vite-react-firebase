@@ -2,6 +2,7 @@
   "name": "expense-tracker",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://expense-tracker-app-87ecc.web.app",
   "type": "module",
   "scripts": {
     "dev": "vite",
