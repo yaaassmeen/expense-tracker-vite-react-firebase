@@ -36,7 +36,7 @@ export const ExpenseTracker = () => {
     try {
       await signOut(auth);
       localStorage.clear();
-      navigate("/");
+      navigate("/expense-tracker-vite-react-firebase");
     } catch (err) {
       console.error(err);
     }
